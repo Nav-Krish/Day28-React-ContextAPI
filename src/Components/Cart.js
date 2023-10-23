@@ -33,10 +33,10 @@ const Cart = () => {
 
   return (
     <div>
-      <h2 className="cart-heading">Cart Items</h2>
+      <h1 className="cart-heading">Cart Items</h1>
 
       {cart && cart.length > 0 ? (
-        <div className="container-fluid vh-80">
+        <div className="container-fluid vh-90">
           {cart.map((product) => (
             <div key={product.id} className="product-container">
               <div className="product-img">
@@ -48,7 +48,7 @@ const Cart = () => {
               </div>
               <div className="product-details">
                 <h3 className="card-title text-bold">{product.title}</h3>
-                <h6>Description</h6>
+                <h5>Description</h5>
                 <span>{product.description}</span>
                 <button
                   className="product-remove btn btn-danger"
@@ -75,7 +75,7 @@ const Cart = () => {
           ))}
         </div>
       ) : (
-        <div className="cart-empty">Your Cart is Empty. Please put some item to buy it soon.</div>
+        <div className="cart-empty">Your Cart is empty. Please add some items to the cart.</div>
       )}
       <div className="total-container">
         <div className="sub-total">
