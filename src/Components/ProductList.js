@@ -11,7 +11,7 @@ const ProductList = () => {
       <div className="row">
         {products.map((product) => (
           <div
-            className="col-12 col-md-4 col-sm-6 col-lg-3 col-xl-3"
+            className="col-12 col-md-4 col-sm-6 col-lg-4 col-xl-3"
             key={product.id}
           >
             <div className="card my-4">
