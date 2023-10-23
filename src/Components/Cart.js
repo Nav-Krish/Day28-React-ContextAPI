@@ -50,12 +50,12 @@ const Cart = () => {
                 <h3 className="card-title text-bold">{product.title}</h3>
                 <h6>Description</h6>
                 <span>{product.description}</span>
-                <span
-                  className="product-remove"
+                <button
+                  className="product-remove btn btn-danger"
                   onClick={() => removeFromCart(product)}
                 >
                   Remove
-                </span>
+                </button>
               </div>
               <div className="product-quantity">
                 <select
