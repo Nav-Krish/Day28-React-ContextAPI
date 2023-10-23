@@ -1,0 +1,112 @@
+/* Cart Heading */
+.cart-heading {
+    margin: 20px;
+    font-size: 1.75rem;
+    text-align: center;
+  }
+  
+  /* Container for cart items */
+  .container-fluid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  /* Individual product container */
+  .product-container {
+    display: flex;
+    border: 1px solid #2a2a2a;
+    border-radius: 5px;
+    padding: 10px;
+    width: 100%;
+  }
+  
+  /* Product image */
+  .product-img {
+    width: 30%;
+  }
+  .product-img img {
+    height: 300px;
+    object-fit: contain;
+  }
+  
+  /* Product details */
+  .product-details {
+    flex: 1;
+    margin: auto 0 auto 20px;
+  }
+  
+  .product-details h3 {
+    margin: 0;
+    font-weight: bold;
+  }
+  
+  .product-details h6 {
+    margin-top: 10px;
+    font-weight: bold;
+  }
+  
+  /* Product Remove Button */
+  .product-remove {
+    display: block;
+    margin-top: 50px;
+  }
+  
+  /* Quantity selector */
+  .product-quantity {
+    margin: auto;
+  }
+  .product-quantity select {
+    margin: 0 20px;
+    padding: 5px;
+  }
+  
+  /* Product Price */
+  .product-price {
+    margin: auto;
+    padding: 0 5px;
+  }
+  
+  /* Total Container */
+  .total-container {
+    border-top: 1px solid #2a2a2a;
+    margin-top: 20px;
+    padding-top: 20px;
+    text-align: right;
+  }
+  
+  /* Sub Total */
+  .sub-total {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    margin: 0 20px;
+  }
+  
+  /* Shipping */
+  .shipping {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    margin: 0 20px;
+  }
+  
+  /* Horizontal Line */
+  .horizon-line {
+    border: 1px solid #000000;
+  }
+  
+  /* Total */
+  .total {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin: 0 20px;
+  }
+  
+  /* Cart Empty */
+  .cart-empty {
+    text-align: center;
+    height: 55vh;
+  }
