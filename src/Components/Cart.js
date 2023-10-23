@@ -36,7 +36,7 @@ const Cart = () => {
       <h1 className="cart-heading">Cart Items</h1>
 
       {cart && cart.length > 0 ? (
-        <div className="container-fluid vh-10">
+        <div className="container-fluid vh-80">
           {cart.map((product) => (
             <div key={product.id} className="product-container">
               <div className="product-img">
@@ -77,7 +77,7 @@ const Cart = () => {
       ) : (
         <div className="cart-empty">Your Cart is empty. Please add some items to the cart.</div>
       )}
-      <div className="total-container vh-50">
+      <div className="total-container vh-80">
         <div className="sub-total">
           <span className="sub-text">Sub Total:</span>
           <span className="sub-amount">$ {calculateSubTotal()}</span>
