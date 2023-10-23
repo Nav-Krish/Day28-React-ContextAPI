@@ -50,13 +50,13 @@ const Cart = () => {
                 <h3 className="card-title text-bold">{product.title}</h3>
                 <h5>Description</h5>
                 <span>{product.description}</span>
-                <button
-                  className="product-remove btn btn-danger justify-content-end"
-                  onClick={() => removeFromCart(product)}
-                >
-                  Remove
-                </button>
               </div>
+              <button
+                className="product-remove btn btn-danger justify-content-end"
+                onClick={() => removeFromCart(product)}
+              >
+                Remove
+              </button>
               <div className="product-quantity">
                 <select
                   value={product.quantity}
