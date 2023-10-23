@@ -77,7 +77,7 @@ const Cart = () => {
       ) : (
         <div className="cart-empty">Your Cart is empty. Please add some items to the cart.</div>
       )}
-      <div className="total-container">
+      <div className="total-container vh-80">
         <div className="sub-total">
           <span className="sub-text">Sub Total:</span>
           <span className="sub-amount">$ {calculateSubTotal()}</span>
