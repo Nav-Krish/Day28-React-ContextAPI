@@ -64,13 +64,13 @@ const Cart = () => {
               </div>
               <div className="product-price">
                 $ {!product.newPrice ? product.price : product.newPrice}
-                <button
+              </div>
+              <button
                 className="product-remove btn btn-danger justify-content-end"
                 onClick={() => removeFromCart(product)}
               >
                 Remove
               </button>
-              </div>
             </div>
           ))}
         </div>
