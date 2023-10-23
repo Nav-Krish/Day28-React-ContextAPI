@@ -36,7 +36,7 @@ const Cart = () => {
       <h1 className="cart-heading">Cart Items</h1>
 
       {cart && cart.length > 0 ? (
-        <div className="container-fluid vh-50">
+        <div className="container-fluid vh-10">
           {cart.map((product) => (
             <div key={product.id} className="product-container">
               <div className="product-img">
