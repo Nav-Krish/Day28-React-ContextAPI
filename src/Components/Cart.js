@@ -24,7 +24,7 @@ const Cart = () => {
   };
 
   // Calculate the subtotal by summing up the prices of all items in the cart
-  const calculateSubTotal = () => {
+  const calculateTotal = () => {
     return cart.reduce(
       (total, item) => total + (!item.newPrice ? item.price : item.newPrice),
       0
@@ -81,7 +81,7 @@ const Cart = () => {
       <div className="total-container mx-auto">
         <div className="sub-total">
           <span className="sub-text">Sub Total:</span>
-          <span className="sub-amount">$ {calculateSubTotal().toFixed(2)}</span>
+          <span className="sub-amount">$ {calculateTotal().toFixed(2)}</span>
         </div>
         <div className="shipping">
           <span className="shipping-text">Shipping:</span>
@@ -90,7 +90,7 @@ const Cart = () => {
         <hr className="horizon-line" />
         <div className="total">
           <span className="total-text">Total:</span>
-          <span className="total-amount">$ {calculateSubTotal().toFixed(2)}</span>
+          <span className="total-amount">$ {calculateTotal().toFixed(2)}</span>
         </div>
       </div>
     </div>
