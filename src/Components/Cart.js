@@ -51,12 +51,6 @@ const Cart = () => {
                 <h5>Description</h5>
                 <span>{product.description}</span>
               </div>
-              <button
-                className="product-remove btn btn-danger justify-content-end"
-                onClick={() => removeFromCart(product)}
-              >
-                Remove
-              </button>
               <div className="product-quantity">
                 <select
                   value={product.quantity}
@@ -70,6 +64,12 @@ const Cart = () => {
               </div>
               <div className="product-price">
                 $ {!product.newPrice ? product.price : product.newPrice}
+                <button
+                className="product-remove btn btn-danger justify-content-end"
+                onClick={() => removeFromCart(product)}
+              >
+                Remove
+              </button>
               </div>
             </div>
           ))}
