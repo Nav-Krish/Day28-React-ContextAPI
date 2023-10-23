@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
-import "./ProductStyle.css";
-import CartContext from "../Context/CartContext";
+import "./ProductList.css";
+import CartContext from "../Context/Context";
 
 const ProductList = () => {
   const { products, addToCart } = useContext(CartContext);
@@ -11,17 +11,17 @@ const ProductList = () => {
       <div className="row">
         {products.map((product) => (
           <div
-            className="col-12 col-lg-4"
+            className="col-12 col-lg-4 col-md-6"
             key={product.id}
           >
             <div className="card my-4">
-              <header>
+              <div className="card-header">
                 <img
                   className="card-img-top"
                   src={product.thumbnail}
                   alt={product.title}
                 />
-              </header>
+              </div>
               <div className="card-body text-center">
                 <h5 className="card-title fw-bolder">{product.title}</h5>
                 <p className="card-text text-black fw-bold">

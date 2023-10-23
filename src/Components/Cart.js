@@ -78,10 +78,10 @@ const Cart = () => {
       ) : (
         <div className="cart-empty">Your Cart is empty. Please add some items to the cart.</div>
       )}
-      <div className="total-container vh-80">
+      <div className="total-container mx-auto">
         <div className="sub-total">
           <span className="sub-text">Sub Total:</span>
-          <span className="sub-amount">$ {calculateSubTotal()}</span>
+          <span className="sub-amount">$ {calculateSubTotal().toFixed(2)}</span>
         </div>
         <div className="shipping">
           <span className="shipping-text">Shipping:</span>
@@ -90,7 +90,7 @@ const Cart = () => {
         <hr className="horizon-line" />
         <div className="total">
           <span className="total-text">Total:</span>
-          <span className="total-amount">$ {calculateSubTotal()}</span>
+          <span className="total-amount">$ {calculateSubTotal().toFixed(2)}</span>
         </div>
       </div>
     </div>

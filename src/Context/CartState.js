@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useContext, useMemo } from 'react';
-import CartContext from './CartContext';
+import CartContext from './Context';
 
 const CartState = ({ children }) => {
     const [products, setProducts] = useState([]);
@@ -18,8 +18,8 @@ const CartState = ({ children }) => {
 
     //Removing Product from Cart
     const removeFromCart = (productToRemove) => {
-        const updatedCart = cart.filter(item => item.id !== productToRemove.id);
-        setCart(updatedCart);
+        const newCart = cart.filter(ele => ele.id !== productToRemove.id);
+        setCart(newCart);
     };
 
     // Fetching Products Data
