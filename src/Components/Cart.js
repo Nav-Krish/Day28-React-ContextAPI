@@ -36,7 +36,7 @@ const Cart = () => {
       <h1 className="cart-heading">Cart Items</h1>
 
       {cart && cart.length > 0 ? (
-        <div className="container-fluid vh-80">
+        <div className="container-fluid d-flex vh-80">
           {cart.map((product) => (
             <div key={product.id} className="product-container">
               <div className="product-img">
@@ -47,9 +47,15 @@ const Cart = () => {
                 />
               </div>
               <div className="product-details">
-                <h3 className="card-title text-bold">{product.title}</h3>
+                <h3 className="card-title text-bold mb-4">{product.title}</h3>
                 <h5>Description</h5>
                 <span>{product.description}</span>
+                <button
+                className="product-remove btn btn-danger"
+                onClick={() => removeFromCart(product)}
+              >
+                Remove
+              </button>
               </div>
               <div className="product-quantity">
                 <select
@@ -65,12 +71,7 @@ const Cart = () => {
               <div className="product-price">
                 $ {!product.newPrice ? product.price : product.newPrice}
               </div>
-              <button
-                className="product-remove btn btn-danger justify-content-end"
-                onClick={() => removeFromCart(product)}
-              >
-                Remove
-              </button>
+              
             </div>
           ))}
         </div>

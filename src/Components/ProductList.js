@@ -7,11 +7,11 @@ const ProductList = () => {
 
   return (
     <div className="container-fluid bg-dark text-white">
-      <h2 className="text-center pt-3">Product List</h2>
+      <h2 className="text-center pt-3 mx-auto">Product List</h2>
       <div className="row">
         {products.map((product) => (
           <div
-            className="col-12 col-md-4 col-sm-6 col-lg-4 col-xl-3"
+            className="col-12 col-lg-4"
             key={product.id}
           >
             <div className="card my-4">
@@ -23,7 +23,7 @@ const ProductList = () => {
                 />
               </header>
               <div className="card-body text-center">
-                <h5 className="card-title">{product.title}</h5>
+                <h5 className="card-title fw-bolder">{product.title}</h5>
                 <p className="card-text text-black fw-bold">
                   $ {product.price}
                 </p>
