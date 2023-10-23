@@ -9,7 +9,7 @@ function Navbar() {
     <nav className="navbar navbar-expand-lg bg-body-tertiary">
       <div className="container-fluid">
         <Link className="navbar-brand" to="/">
-          Shop Cart
+          Products
         </Link>
         <button
           className="navbar-toggler"
@@ -33,13 +33,13 @@ function Navbar() {
               </Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="/">
+              <Link className="nav-link active" to="/">
                 Features
               </Link>
             </li>
             <li className="nav-item dropdown">
               <Link
-                className="nav-link dropdown-toggle"
+                className="nav-link active dropdown-toggle"
                 to="#!"
                 role="button"
                 data-bs-toggle="dropdown"
@@ -74,7 +74,7 @@ function Navbar() {
               to="/cart"
               className="d-flex align-items-center btn btn-outline-dark"
             >
-              <BsFillCartFill className="mx-1" /> Cart ({cart.length})
+              <BsFillCartFill className="mx-2" /> Cart ( {cart.length} )
             </Link>
           </div>
         </div>

@@ -31,7 +31,7 @@ const ProductList = () => {
               <button
                 onClick={() => addToCart(product)}
                 type="button"
-                className="btn btn-primary"
+                className="btn btn-primary w-40 mx-auto"
               >
                 Add to Cart
               </button>

@@ -5,7 +5,7 @@ const CartState = ({ children }) => {
     const [products, setProducts] = useState([]);
     const [cart, setCart] = useState([]);
 
-    // Adding product to Cart from Product page
+    // Adding product to Cart from Product List page
     const addToCart = (product) => {
         // Check if the product is already in the cart based on its ID
         const isProductInCart = cart.some(item => item.id === product.id);

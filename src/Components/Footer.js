@@ -4,8 +4,8 @@ import { Link } from "react-router-dom";
 function Footer() {
   return (
     <div className="container">
-      <footer className="py-3 my-4">
-        <ul className="nav justify-content-center border-bottom pb-3 mb-3">
+      <footer className="footer">
+        <ul className="nav justify-content-center border-bottom mb-2">
           <li className="nav-item">
             <Link to="/" className="nav-link px-2 text-muted">
               Home
@@ -32,7 +32,7 @@ function Footer() {
             </Link>
           </li>
         </ul>
-        <p className="text-center text-muted">© 2022 Company, Inc</p>
+        <p className="text-center text-muted">© 2023 Company, Inc.</p>
       </footer>
     </div>
   );
