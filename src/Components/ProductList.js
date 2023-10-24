@@ -7,7 +7,7 @@ const ProductList = () => {
 
   return (
     <div className="container-fluid bg-dark text-white">
-      <h2 className="text-center pt-3 mx-auto">Product List</h2>
+      <h2 className="text-center pt-3 mx-auto">Products</h2>
       <div className="row">
         {products.map((product) => (
           <div
@@ -24,6 +24,7 @@ const ProductList = () => {
               </div>
               <div className="card-body text-center">
                 <h5 className="card-title fw-bolder">{product.title}</h5>
+                <span className="rating fw-bold me-2">⭐ {product.rating}</span>
                 <p className="card-text text-black fw-bold">
                   $ {product.price}
                 </p>
