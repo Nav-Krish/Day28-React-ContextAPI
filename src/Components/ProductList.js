@@ -25,7 +25,7 @@ const ProductList = () => {
               <div className="card-body text-center">
                 <h5 className="card-title fw-bolder">{product.title}</h5>
                 <span className="rating fw-bold me-2">⭐ {product.rating}</span>
-                <p className="card-text text-black fw-bold">
+                <p className="card-text text-black fw-bolder fs-5">
                   $ {product.price}
                 </p>
               </div>
